@@ -14,10 +14,10 @@ async def get_account_by_email(email: EmailStr):
     """
     
     # Filter
-    filter = {"email": email}
+    query = {"email": email}
 
     # Query
-    response = await account_col.find_one(filter=filter)
+    response = await account_col.find_one(filter=query)
 
     # Check if response is None
     if not response:

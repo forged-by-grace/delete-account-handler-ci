@@ -13,9 +13,6 @@ class Settings(BaseSettings):
     api_delete_account: str    
     api_delete_account_topic: str
     
-    # API model versions
-    account_model_version: int
-
     # Cache credentials   
     api_redis_host_local: str    
    
